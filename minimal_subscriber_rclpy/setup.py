@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'examples_rclpy_minimal_subscriber'
+package_name = 'minimal_subscriber_rclpy'
 
 setup(
     name=package_name,
@@ -32,11 +32,9 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'subscriber_old_school ='
-            ' examples_rclpy_minimal_subscriber.subscriber_old_school:main',
-            'subscriber_lambda = examples_rclpy_minimal_subscriber.subscriber_lambda:main',
-            'subscriber_member_function ='
-            ' examples_rclpy_minimal_subscriber.subscriber_member_function:main',
+            'subscriber_old_school = minimal_subscriber_rclpy.subscriber_old_school:main',
+            'subscriber_lambda = minimal_subscriber_rclpy.subscriber_lambda:main',
+            'subscriber_member_function = minimal_subscriber_rclpy.subscriber_member_function:main',
         ],
     },
 )
